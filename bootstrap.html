@@ -4,8 +4,8 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    
-    <title>Bootstrap 101 Template</title>
+
+    <title>It Girl Accessories</title>
 
     <!-- Bootstrap -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
@@ -13,16 +13,118 @@
     <!-- Optional theme un-comment to see what it looks like (will probably require html -->
     <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous"> -->
 
-    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
+    <style>
+      body {
+        margin: 10px;
+      }
+      .nav-bar {
+        list-style: none;
+        display: inline;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: white;
+        position: relative;
+      }
+      .nav-bar li {
+        display: inline;
+        float: left;
+        margin: 1.5em 0;
+        padding-left: 2.5em;
+        font-size: 115%;
+      }
+      .nav-bar li a {
+        display: inline;
+        text-align: center;
+        padding: 2em 1em;
+        text-decoration: none;
+      }
+    </style>
   </head>
+  
   <body>
-    <h1>Hello, world!</h1>
+    <div class="page-header">
+      <h1>It Girl Accessories<small> Main Shop</small></h1>
+    </div>
 
+    <div class="nav-bar">
+      <div class="container">
+        <ul>
+          <li><a href="index.html" button type="button" class="btn btn-default" title="Home">Home</a></li>
+          <li><a href="pages/jewelry.html" button type="button" class="btn btn-default" title="Jewelry">Jewelry</a></li>
+          <li><a href="pages/bags.html"button type="button" class="btn btn-default" title="Bags">Bags + Backpacks</a></li>
+          <li><a href="pages/misc.html" button type="button" class="btn btn-default" title="Miscellaneous">Misc</a></li>
+          <li><a href="pages/about.html" button type="button" class="btn btn-default" title="Our Story">Our Story</a></li>
+          <li><a href="pages/cart.html" button type="button" class="btn btn-default" aria-label="Shopping Cart">
+              <span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span>
+            </button></a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="jumbotron">
+      <div class="container">
+        <h1>50% Off All Jewelry</h1>
+        <p>For a limited time only, take 50% off all of our jewelry! Offer ends April 15th</p>
+        <p><a class="btn btn-default btn-lg" href="pages/jewelry.html" role="button">Shop Jewelry</a></p>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-sm-6 col-md-3">
+        <a href="#" class="thumbnail">
+          <img src="images/silver-choker.png" alt="Silver Choker">
+        </a>
+      </div>
+      <div class="col-sm-6 col-md-3">
+        <a href="#" class="thumbnail">
+          <img src="images/circle-choker.png" alt="Silver Circle Choker">
+        </a>
+      </div>
+      <div class="col-sm-6 col-md-3">
+        <a href="#" class="thumbnail">
+          <img src="images/black-choker.png" alt="Black Choker">
+        </a>
+      </div>
+      <div class="col-sm-6 col-md-3">
+        <a href="#" class="thumbnail">
+          <img src="images/bead-necklace.png" alt="Bead Necklace">
+        </a>
+      </div>
+    </div>
+    <h2>Sign up for our mailing list</h2>
+    <form class="form-horizontal">
+      <div class="form-group">
+        <label for="inputEmail3" class="col-sm-2 control-label">Email</label>
+        <div class="col-sm-3">
+          <input type="email" class="form-control" id="inputEmail3" placeholder="Email">
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="inputPassword3" class="col-sm-2 control-label">Password</label>
+        <div class="col-sm-3">
+          <input type="password" class="form-control" id="inputPassword3" placeholder="Password">
+        </div>
+      </div>
+      <div class="form-group">
+        <div class="col-sm-offset-2 col-sm-10">
+          <div class="checkbox">
+            <label>
+              <input type="checkbox"> Remember me
+            </label>
+          </div>
+        </div>
+      </div>
+      <div class="form-group">
+        <div class="col-sm-offset-2 col-sm-10">
+          <button type="submit" class="btn btn-default">Sign in</button>
+        </div>
+      </div>
+    </form>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
